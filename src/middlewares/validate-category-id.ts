@@ -22,7 +22,8 @@ export const validateCategoryId = async (
 
 		next();
 	} catch (error) {
-		console.info(error.message);
+		const err = error as Error;
+		console.info(err.message);
 
 		return res.status(500).json({ mensagem: "Erro interno do servidor" });
 	}

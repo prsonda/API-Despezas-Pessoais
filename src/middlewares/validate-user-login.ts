@@ -1,5 +1,5 @@
 import { Response } from "express";
-import { pool } from "../conexion.js";
+import { pool } from "../conexion";
 const jwt = require("jsonwebtoken");
 require("dotenv").config();
 const passwordJWT = process.env.PASSWORDJWT;
